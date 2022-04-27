@@ -1,0 +1,117 @@
+/* typography */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Colors */
+
+:root {
+  --c-white: #ffffff;
+  --c-black: #000000;
+  --c-black-75: #404040;
+  --c-black-50: #808080;
+  --c-black-25: #c0c0c0;
+  --c-blue: #7bafd4;
+  --c-blue-75: #91c0db;
+  --c-blue-50: #b6d5e7;
+  --c-blue-25: #daeaf3;
+  --c-green: #aed5b2;
+  --c-green-75: #b7ddc4;
+  --c-green-50: #cfe8d8;
+  --c-green-25: #e7f3eb;
+  --c-yellow: #edff00;
+  --c-yellow-75: #e4e856;
+  --c-yellow-50: #edf08e;
+  --c-yellow-25: #f6f7c7;
+}
+
+/* Fonts 
+for bold text use 700
+for <b> and rest of the txt use 400*/
+
+/* body, headings, paragraps, anchor links, lists */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+b {
+  font-family: "Inter", "Roboto", Arial, Helvetica, sans-serif;
+}
+
+/* Breackpoints*/
+
+/*Home
+1024px-burguer menu appears
+769px-4 products per row
+768px-2products per row
+320px-1 column product
+contet-765px 1 column text + image
+*/
+
+/* Product list
+1024px-burguer menu appears
+769px and up- 4 products per row
+768px- 2 products per row
+320px- 1 column product */
+
+/* Product view
+1024px-burguer menu appears
+769px and up- 3 column display
+768px- 1 column display
+ */
+
+/* HEADER */
+
+/* main navigation */
+
+.bluebanner {
+  padding: 0.6rem 2.2rem;
+  background-color: var(--c-blue-75);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bluebanner p {
+  color: var(--c-white);
+  font-size: 12px;
+}
+
+.logomainnav {
+  height: 1.5em;
+}
+
+.mainnav {
+  margin: 0px 40px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* MAIN */
+
+main {
+  margin: 0px 40px;
+}
