@@ -1,6 +1,6 @@
 /* typography */
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
 * {
@@ -113,11 +113,7 @@ contet-765px 1 column text + image
 /* MAIN */
 
 main {
-  margin: 0px 40px;
-}
-
-main.HP {
-  margin: 0%;
+  margin: 0px 20px;
 }
 
 .hero {
@@ -142,25 +138,136 @@ main.HP {
 }
 .herotext p {
   color: var(--c-white);
-  padding: 2rem 0 5rem 0;
+  padding: 5rem 0;
 }
-
 .italic {
   font-style: italic;
 }
-
 .button {
   position: relative;
   padding: 0.8rem 2.2rem;
   background-color: var(--c-white);
   margin-bottom: 2rem;
 }
-
 .btn {
   font-weight: 400;
   color: var(--c-black);
 }
-
 p {
   font-size: 0.8rem;
+  font-family: "Roboto";
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+}
+.b {
+  font-weight: 500;
+}
+.price {
+  font-size: 0.7rem;
+  padding-top: 0.5rem;
+}
+.bagname {
+  padding-top: 0.5rem;
+}
+.HPfilters {
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  gap: 2rem;
+}
+.HPfilters p {
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.HPcart {
+  padding-bottom: 2rem;
+  position: relative;
+}
+.colorcircles {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+}
+.circleblue {
+  width: 8%;
+  aspect-ratio: 1/1;
+  background-image: url(../assets/blue.svg);
+  background-repeat: no-repeat;
+}
+h1 {
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 2rem;
+}
+h2 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+h3 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--c-black-50);
+  letter-spacing: 0.02rem;
+}
+.zeroImpact p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.zeroProducts {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+.zeroCart {
+  min-width: 90%;
+}
+.grey {
+  color: var(--c-black-50);
+  line-height: 1.2rem;
+}
+.link {
+  font-family: "Inter";
+  font-weight: 200;
+  color: var(--c-black);
+  margin: 2rem 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.HPShop {
+  margin-top: 3rem;
+}
+.HPShop article {
+  margin-bottom: 5rem;
+}
+.HPShop p {
+  text-align: center;
+}
+.HPSoMe h1 {
+  text-align: center;
+}
+.square {
+  aspect-ratio: 1/1;
+  margin-top: 1rem;
+}
+.center {
+  text-align: center;
+}
+.HPSoMe .link {
+  display: grid;
+  justify-items: center;
+  margin: 4rem 0;
+}
+footer {
+  background-color: var(--c-blue);
+  height: 50px;
 }
