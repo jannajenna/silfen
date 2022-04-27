@@ -115,3 +115,52 @@ contet-765px 1 column text + image
 main {
   margin: 0px 40px;
 }
+
+main.HP {
+  margin: 0%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-image: url(../images/DSC_0613-1-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+  width: 100%;
+  background-size: cover;
+  z-index: -4;
+  margin: 0%;
+  justify-content: space-between;
+}
+.herotext h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: var(--c-white);
+}
+.herotext p {
+  color: var(--c-white);
+  padding: 2rem 0 5rem 0;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.button {
+  position: relative;
+  padding: 0.8rem 2.2rem;
+  background-color: var(--c-white);
+  margin-bottom: 2rem;
+}
+
+.btn {
+  font-weight: 400;
+  color: var(--c-black);
+}
+
+p {
+  font-size: 0.8rem;
+}
