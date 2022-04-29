@@ -93,6 +93,8 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+}
+
 .PLcart {
   padding-bottom: 2rem;
   position: relative;
