@@ -237,6 +237,55 @@ h4 {
 .hide {
   display: none;
 }
+.PPproduct {
+  margin-top: 20px;
+}
+.bold {
+  font-weight: 500;
+}
+.PPname,
+.PPprice,
+.PPdescription,
+.PPcolor,
+.PPatc,
+.PPatw {
+  margin-top: 20px;
+}
+.PPatc {
+  display: flex;
+  gap: 20px;
+}
+input[type="number"] {
+  width: 100px;
+  border: 1px solid var(--c-black);
+  padding: 0.7rem;
+}
+.PPatcbutton {
+  color: var(--c-white);
+  background-color: var(--c-black);
+  padding: 0.7rem;
+  width: 100%;
+}
+.PPplus {
+  margin: 40px 0;
+}
+.PPplus1,
+.PPplus2 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--c-black);
+  padding: 20px 0;
+}
+.PPplus1 {
+  border-top: 1px solid var(--c-black);
+}
+.PPdescription {
+  line-height: 1.5rem;
+  margin: 40px 0;
+}
+.PPrelated {
+  margin-top: 40px;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
@@ -311,6 +360,16 @@ h4 {
     font-size: 1.5rem;
     line-height: 3rem;
     margin-bottom: 1rem;
+  }
+  .PPproduct {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .PPtext {
+    margin-left: 20px;
+  }
+  .PPatcbutton {
+    width: 200px;
   }
 }
 @media screen and (min-width: 768px) {
