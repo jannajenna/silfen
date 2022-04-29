@@ -78,7 +78,7 @@ p {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-.HPcart,
+#HPcart,
 .PPcart {
   padding-bottom: 2rem;
   position: relative;
@@ -95,7 +95,7 @@ p {
   gap: 20px;
 }
 
-.PLcart {
+#HPcart {
   padding-bottom: 2rem;
   position: relative;
 }
