@@ -72,9 +72,21 @@ p {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-.HPcart {
+.HPcart,
+.PPcart {
   padding-bottom: 2rem;
   position: relative;
+}
+.PPcart {
+  padding: 0;
+}
+.PPrelated h2 {
+  margin-bottom: 20px;
+}
+.PPgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 .colorcircles {
   position: absolute;
@@ -284,7 +296,7 @@ input[type="number"] {
   margin: 40px 0;
 }
 .PPrelated {
-  margin-top: 40px;
+  margin: 40px 0;
 }
 
 /* MEDIA QUERIES */
@@ -363,13 +375,16 @@ input[type="number"] {
   }
   .PPproduct {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin: 0 80px;
+    margin-top: 40px;
   }
   .PPtext {
     margin-left: 20px;
   }
-  .PPatcbutton {
-    width: 200px;
+  .PPgrid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (min-width: 768px) {
