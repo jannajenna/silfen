@@ -1,170 +1,228 @@
 .hero {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    background-image: url(../images/DSC_0613-1-2.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 75vh;
-    width: 100%;
-    background-size: cover;
-    z-index: -4;
-    margin: 0%;
-    justify-content: space-between;
-  }
-  .herotext {
-      margin-left: 20px;
-      margin-right: auto;
-  }
-  .herotext h1 {
-    font-weight: 400;
-    font-size: 2.5rem;
-    color: var(--c-white);
-  }
-  .herotext p {
-    color: var(--c-white);
-    padding: 5rem 0;
-  }
-  .italic {
-    font-style: italic;
-  }
-  .button {
-    position: relative;
-    padding: 0.8rem 2.2rem;
-    background-color: var(--c-white);
-    margin-bottom: 2rem;
-    width: auto;
-  }
-  .btn {
-    font-weight: 400;
-    color: var(--c-black);
-  }
-  p {
-    font-size: 0.8rem;
-    font-family: "Roboto";
-    font-weight: 300;
-    letter-spacing: 0.02rem;
-  }
-  .b {
-    font-weight: 500;
-  }
-  .price {
-    font-size: 0.7rem;
-    padding-top: 0.5rem;
-  }
-  .bagname {
-    padding-top: 0.5rem;
-  }
-  .HPfilters {
-    overflow: auto;
-    white-space: nowrap;
-    display: flex;
-    gap: 2rem;
-  }
-  .HPfilters p {
-    font-size: 1.2rem;
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-  }
-  .HPcart {
-    padding-bottom: 2rem;
-    position: relative;
-  }
-  .colorcircles {
-    position: absolute;
-    display: flex;
-    gap: 0.5rem;
-    width: 100%;
-    height: 100%;
-    top: 10px;
-    left: 10px;
-  }
-  .circleblue {
-    width: 8%;
-    aspect-ratio: 1/1;
-    background-image: url(../assets/blue.svg);
-    background-repeat: no-repeat;
-  }
-  h1 {
-    font-family: "Inter";
-    font-weight: 200;
-    font-size: 2rem;
-  }
-  h2 {
-    font-family: "Inter";
-    font-weight: 600;
-    font-size: 1.2rem;
-  }
-  h3 {
-    font-family: "Inter";
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    color: var(--c-black-50);
-    letter-spacing: 0.02rem;
-  }
-  .zeroImpact p {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .zeroProducts {
-    margin-top: 4rem;
-    display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-    position: relative;
-  }
-  .zeroCart {
-    min-width: 90%;
-  }
-  .grey {
-    color: var(--c-black-50);
-    line-height: 1.2rem;
-  }
-  .link {
-    font-family: "Inter";
-    font-weight: 200;
-    color: var(--c-black);
-    margin: 2rem 0;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-  }
-  .HPShop {
-    margin-top: 3rem;
-  }
-  .HPShop article {
-    margin-bottom: 5rem;
-  }
-  .HPShop p {
-    text-align: center;
-  }
-  .HPSoMe h1 {
-    text-align: center;
-  }
-  .square {
-    aspect-ratio: 1/1;
-    margin-top: 1rem;
-  }
-  .center {
-    text-align: center;
-  }
-  .HPSoMe .link {
-    display: grid;
-    justify-items: center;
-    margin: 4rem 0;
-  }
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-image: url(../images/DSC_0613-1-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+  width: 100%;
+  background-size: cover;
+  z-index: -4;
+  margin: 0%;
+  justify-content: space-between;
+}
+.herotext {
+  margin-left: 20px;
+  margin-right: auto;
+}
+.herotext h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: var(--c-white);
+}
+.herotext p {
+  color: var(--c-white);
+  padding: 5rem 0;
+}
+.italic {
+  font-style: italic;
+}
+.button {
+  position: relative;
+  padding: 0.8rem 2.2rem;
+  background-color: var(--c-white);
+  margin-bottom: 2rem;
+  width: auto;
+}
+.btn {
+  font-weight: 400;
+  color: var(--c-black);
+}
+p {
+  font-size: 0.8rem;
+  font-family: "Roboto";
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+}
+.b {
+  font-weight: 500;
+}
+.price {
+  font-size: 0.7rem;
+  padding-top: 0.5rem;
+}
+.bagname {
+  padding-top: 0.5rem;
+}
+.HPfilters {
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+  gap: 2rem;
+}
+.HPfilters p {
+  font-size: 1.2rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.HPcart {
+  padding-bottom: 2rem;
+  position: relative;
+}
+.colorcircles {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  top: 10px;
+  left: 10px;
+}
+.circleblue {
+  width: 8%;
+  aspect-ratio: 1/1;
+  background-image: url(../assets/blue.svg);
+  background-repeat: no-repeat;
+}
+h1 {
+  font-family: "Inter";
+  font-weight: 200;
+  font-size: 2rem;
+}
+h2 {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+h3 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--c-black-50);
+  letter-spacing: 0.02rem;
+}
+.zeroImpact p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.zeroProducts {
+  margin-top: 4rem;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  position: relative;
+}
+.zeroCart {
+  min-width: 90%;
+}
+.grey {
+  color: var(--c-black-50);
+  line-height: 1.2rem;
+}
+.link {
+  font-family: "Inter";
+  font-weight: 200;
+  color: var(--c-black);
+  margin: 2rem 0;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.HPShop {
+  margin-top: 3rem;
+}
+.HPShop article {
+  margin-bottom: 5rem;
+}
+.HPShop p {
+  text-align: center;
+}
+.HPSoMe h1 {
+  text-align: center;
+}
+.square {
+  aspect-ratio: 1/1;
+  margin-top: 1rem;
+}
+.center {
+  text-align: center;
+}
+.HPSoMe .link {
+  display: grid;
+  justify-items: center;
+  margin: 4rem 0;
+}
+h4 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+.fav {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
+  align-items: center;
+}
+.favText {
+  z-index: 1;
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+.favimg {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  opacity: 50%;
+}
+.sust {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 5rem;
+  align-items: center;
+}
+.sustimg {
+  grid-column: 1 / 4;
+  grid-row: 1;
+  opacity: 50%;
+}
+.sustainText {
+  grid-column: 1 / 5;
+  grid-row: 1;
+  z-index: 1;
+}
+.bbutton {
+  position: relative;
+  padding: 0.8rem 2.2rem;
+  color: var(--c-white);
+  margin-bottom: 2rem;
+  width: 200px;
+  background-color: #6ec1e4;
+  border-radius: 5px;
+  font-weight: 400;
+}
+.fav .btn,
+.sust .btn {
+  display: grid;
+  justify-items: center;
+}
+.HPproducts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
 
-  /* MEDIA QUERIES */
-  @media screen and (min-width: 768px) {
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
   .hero {
-      justify-content: space-around;
+    justify-content: space-around;
   }
   p {
     font-size: 1rem;
   }
   .herotext h1 {
-      font-size: 3rem;
+    font-size: 3rem;
   }
   h1 {
     font-size: 2.5rem;
@@ -174,34 +232,70 @@
     line-height: 2rem;
   }
   .bagname {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
   }
   .price {
-      font-size: 1rem;
+    font-size: 1rem;
   }
   .colorcircles {
-      width: 60%;
-      height: auto;
+    width: 60%;
+    height: auto;
   }
   .zeroImpact {
-      display: grid;
-      grid-template-columns: 1fr 2fr ;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 5rem;
   }
   .zeroProducts {
-      margin-top: 0;
-      margin-left: 20px;
+    margin-top: 0;
+    margin-left: 20px;
   }
   .HPShop {
-      display: flex;
-      gap: 10px;
+    display: flex;
+    gap: 10px;
   }
   .HPShop p {
-      font-size: 0.9rem;
+    font-size: 0.9rem;
   }
-    .SoMeImg {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(5, 1fr);
-    }
+  .SoMeImg {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .favText {
+    z-index: 1;
+    grid-column: 1 / 3;
+    grid-row: 1;
+  }
+  .favimg {
+    grid-column: 2 / 5;
+    grid-row: 1;
+    opacity: 50%;
+  }
+  .sustimg {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    opacity: 50%;
+  }
+  .sustainText {
+    grid-column: 2 / 5;
+    grid-row: 1;
+    z-index: 1;
+  }
+  h4 {
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .circleblue {
+    width: 12%;
+  }
+  .bagname {
+    font-size: 0.9rem;
+  }
+  .price {
+    font-size: 0.8rem;
   }
 }
