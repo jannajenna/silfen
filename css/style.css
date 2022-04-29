@@ -72,9 +72,21 @@ p {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-.HPcart {
+.HPcart,
+.PPcart {
   padding-bottom: 2rem;
   position: relative;
+}
+.PPcart {
+  padding: 0;
+}
+.PPrelated h2 {
+  margin-bottom: 20px;
+}
+.PPgrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 .colorcircles {
   position: absolute;
@@ -237,6 +249,55 @@ h4 {
 .hide {
   display: none;
 }
+.PPproduct {
+  margin-top: 20px;
+}
+.bold {
+  font-weight: 500;
+}
+.PPname,
+.PPprice,
+.PPdescription,
+.PPcolor,
+.PPatc,
+.PPatw {
+  margin-top: 20px;
+}
+.PPatc {
+  display: flex;
+  gap: 20px;
+}
+input[type="number"] {
+  width: 100px;
+  border: 1px solid var(--c-black);
+  padding: 0.7rem;
+}
+.PPatcbutton {
+  color: var(--c-white);
+  background-color: var(--c-black);
+  padding: 0.7rem;
+  width: 100%;
+}
+.PPplus {
+  margin: 40px 0;
+}
+.PPplus1,
+.PPplus2 {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--c-black);
+  padding: 20px 0;
+}
+.PPplus1 {
+  border-top: 1px solid var(--c-black);
+}
+.PPdescription {
+  line-height: 1.5rem;
+  margin: 40px 0;
+}
+.PPrelated {
+  margin: 40px 0;
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 768px) {
@@ -311,6 +372,19 @@ h4 {
     font-size: 1.5rem;
     line-height: 3rem;
     margin-bottom: 1rem;
+  }
+  .PPproduct {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 40px;
+    margin: 0 80px;
+    margin-top: 40px;
+  }
+  .PPtext {
+    margin-left: 20px;
+  }
+  .PPgrid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 @media screen and (min-width: 768px) {
