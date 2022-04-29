@@ -13,11 +13,16 @@
   margin: 0%;
   justify-content: space-between;
 }
-.herotext {
+.PLhero {
+  height: 25vh;
+}
+.herotext,
+h1.PLherotext {
   margin-left: 20px;
   margin-right: auto;
 }
-.herotext h1 {
+.herotext h1,
+h1.PLherotext {
   font-weight: 400;
   font-size: 2.5rem;
   color: var(--c-white);
@@ -72,9 +77,13 @@ p {
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-.HPcart {
+.HPcart,
+.PLcart {
   padding-bottom: 2rem;
   position: relative;
+}
+.PLcart {
+  margin-top: 20px;
 }
 .colorcircles {
   position: absolute;
@@ -213,7 +222,8 @@ h4 {
   justify-items: center;
   cursor: pointer;
 }
-.HPproducts {
+.HPproducts,
+.PLproducts {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
 }
@@ -323,7 +333,8 @@ h4 {
   .price {
     font-size: 0.8rem;
   }
-  .HPproducts {
+  .HPproducts,
+  .PLproducts {
     gap: 20px;
   }
 }
@@ -364,7 +375,8 @@ h4 {
     grid-row: 1;
     z-index: 1;
   }
-  .HPproducts {
+  .HPproducts,
+  .PLproducts {
     grid-template-columns: repeat(4, 1fr);
   }
   main {
@@ -378,5 +390,12 @@ h4 {
   }
   .hero {
     height: 85vh;
+  }
+  .PLhero {
+    height: 40vh;
+  }
+  h1.PLherotext {
+    font-size: 3.5rem;
+    margin-left: 40px;
   }
 }
