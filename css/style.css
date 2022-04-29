@@ -43,7 +43,7 @@
 }
 p {
   font-size: 0.8rem;
-  font-family: "Roboto";
+  /* font-family: "Roboto"; */
   font-weight: 300;
   letter-spacing: 0.02rem;
 }
@@ -156,7 +156,7 @@ h3 {
 .HPSoMe .link {
   display: grid;
   justify-items: center;
-  margin: 4rem 0;
+  margin: 4rem 0 10rem 0;
 }
 h4 {
   font-family: "Inter";
