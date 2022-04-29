@@ -26,7 +26,7 @@ img {
   --c-white: #ffffff;
   --c-black: #000000;
   --c-black-75: #404040;
-  --c-black-50: #808080;
+  --c-black-50: #7a7a7a;
   --c-black-25: #c0c0c0;
   --c-blue: #7bafd4;
   --c-blue-75: #91c0db;
@@ -85,6 +85,10 @@ contet-765px 1 column text + image
 
 /* HEADER */
 
+/* header {
+  position: sticky;
+}
+ */
 /* main navigation */
 
 .bluebanner {
@@ -149,6 +153,7 @@ contet-765px 1 column text + image
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
+  background-color: var(--c-white);
 }
 
 .navicons {
@@ -190,6 +195,7 @@ nav ul li .drop {
   position: absolute;
   display: none;
   flex-direction: row;
+  background-color: var(--c-white);
 }
 
 nav ul li:hover .drop {
@@ -233,4 +239,60 @@ nav ul li:hover .drop {
 
 main {
   margin: 0px 40px;
+}
+
+/* FOOTER*/
+
+footer {
+  background-color: var(--c-blue-75);
+  font-size: 13px;
+  color: var(--c-white);
+}
+
+.linksfooter a {
+  color: var(--c-white);
+}
+
+.linksfooter a:hover {
+  color: var(--c-black-50);
+  transition-delay: 0.2s;
+}
+
+.form {
+  max-width: 100%;
+}
+
+/* .footertext {
+  margin: 40px 80px 70px 40px;
+  display: inline-flex;
+  justify-content: space-around;
+  column-gap: 9rem;
+}*/
+
+.footertext div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  row-gap: 1rem;
+  column-gap: 1rem;
+}
+
+.footertext {
+  display: inline-flex;
+}
+
+.footerbanner {
+  display: flex;
+  flex-direction: row;
+}
+
+.someicons {
+  display: flex;
+  flex-direction: row;
+  column-gap: 15px;
+  align-self: center;
+}
+
+.aticon {
+  font-size: 14px;
 }
