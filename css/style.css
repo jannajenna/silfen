@@ -15,6 +15,7 @@
 }
 .PLhero {
   height: 25vh;
+  justify-content: center;
 }
 .herotext,
 h1.PLherotext {
