@@ -1,163 +1,219 @@
-
 .bannerS {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    background-image: url(../images/another.jpeg);
-    opacity:80%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 75vh;
-    width: 100%;
-    background-size: cover;
-    z-index: -4;
-    margin: 0%;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  background-image: url(../images/another.jpeg);
+  opacity: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35vh;
+  width: 100%;
+  background-size: cover;
+  z-index: -4;
+  margin: 0%;
+  justify-content: space-between;
 }
-.bannerStext{
-    margin: 30vh;
-    color: var(--c-yellow);
+.bannerStext {
+  margin-top: 15vh;
+  margin-left: 40px;
+  background-color: rgba(237, 255, 0, 0.5);
 }
-.introS{
-    margin: 10vh;
+.secondPara {
+  background-color: var(--c-blue-75);
+  padding: 30px;
+  color: var(--c-white);
 }
+.yellowheadline {
+  color: var(--c-yellow);
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+.bannerStext h1 {
+  color: var(--c-black);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.introS {
+  margin: 10vh;
+  position: relative;
+}
+.introS p {
+  margin-top: 30px;
+}
+/* .arrow {
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/arrow.svg);
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.arr1 {
+  top: 7%;
+  left: 90%;
+} */
 @media only screen and (min-width: 730px) {
-    .introS {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    .firstPara{
-        grid-column: 1/2;
-        grid-row:1/2;
-        margin: 5vh;
-    }
-    .secondPara{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        margin: 5vh;
-    }
+  .introS {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
-  @media only screen and (min-width: 1200px) {
-    .introS {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    .firstPara{
-        grid-column: 1/2;
-        grid-row:1/2;
-        margin: 12vh;
-    }
-    .secondPara{
-        grid-column: 2/3;
-        grid-row: 1/2;
-        margin: 12vh;
-    }
+  .introS p {
+    line-height: 2rem;
   }
+  .firstPara {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 5vh;
+  }
+  .secondPara {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 5vh;
+  }
+  .thirdPara {
+    grid-column: 1/3;
+    margin: 0 150px;
+    /* border: 1px solid var(--c-black-25); */
+    background-color: var(--c-blue-25);
+  }
+  .thirdp {
+    margin: 30px;
+  }
+  .bannerStext h1 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .introS {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .firstPara {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 12vh;
+  }
+  .secondPara {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin: 12vh;
+  }
+  .introS p {
+    margin: 60px;
+  }
+  .thirdPara {
+    margin: 0 250px;
+  }
+  .yellowheadline {
+    font-size: 1.5rem;
+  }
+  .bannerStext h1 {
+    font-size: 3rem;
+  }
+  .bannerStext {
+    margin-top: 25vh;
+  }
+}
 .materialsS,
-.workS{
-    margin-right: 10vh;
-    margin-left: 10vh;
-    margin-bottom: 5vh;
+.workS {
+  margin-right: 10vh;
+  margin-left: 10vh;
+  margin-bottom: 5vh;
 }
 .materialsStext,
-.workStext{
-    text-align: center;
-    margin: 3vh;
+.workStext {
+  text-align: center;
+  margin: 3vh;
 }
 .materialsStext h2,
-.workStext h2{
-    color: var(--c-blue);
+.workStext h2 {
+  color: var(--c-blue);
 }
 .materialsStext a,
-.workStext a{
-    border: 0.3px solid black;
-    padding: 1vh;
-    padding-left: 4vh;
-    padding-right: 4vh;
-
+.workStext a {
+  border: 0.3px solid black;
+  padding: 1vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
 }
 .materialsSpic,
-.workSpic{
-    justify-self: center;
+.workSpic {
+  justify-self: center;
 }
 @media only screen and (min-width: 620px) {
-    .materialsS,
-    .workS{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-
-    
+  .materialsS,
+  .workS {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
 }
-@media only screen and (min-width: 1200px){
-    .materialsStext,
-    .workStext{
-        margin:8vh;
-    }
+@media only screen and (min-width: 1200px) {
+  .materialsStext,
+  .workStext {
+    margin: 8vh;
+  }
 }
-.copyMS{
-    background-color: var(--c-blue);
-    color: white;
-    
+.copyMS {
+  background-color: var(--c-blue);
+  color: white;
 }
-.MSicon h2{
-    color: var(--c-blue);
+.MSicon h2 {
+  color: var(--c-blue);
 }
 .MSicon,
-.WSicon h2, p{
-    text-align: center;
-    margin: 1vh;
+.WSicon h2,
+p {
+  text-align: center;
+  margin: 1vh;
 }
 .MSicon,
-.WSicon{
-    margin: 5vh;
+.WSicon {
+  margin: 5vh;
 }
-.MSicon img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+.MSicon img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
-.WSicon img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+.WSicon img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
-@media only screen and (min-width: 620px){
-    .copyMS{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    .copyWS{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-    
+@media only screen and (min-width: 620px) {
+  .copyMS {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .copyWS {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
-@media only screen and (min-width: 800px){
-    .MSicon img{
-        width: 25%;
-    }
-    .WSicon img{
-        width: 25%;
-    }
-    .MSicon p{
-        margin-left: 5vh;
-        margin-right: 5vh;
-    }
-    .WSicon p{
-        margin-left: 5vh;
-        margin-right: 5vh;
-    }
-
+@media only screen and (min-width: 800px) {
+  .MSicon img {
+    width: 25%;
+  }
+  .WSicon img {
+    width: 25%;
+  }
+  .MSicon p {
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
+  .WSicon p {
+    margin-left: 5vh;
+    margin-right: 5vh;
+  }
 }
-.copyWS{
-    background-color: white;
-    color:var(--c-blue);
+.copyWS {
+  background-color: white;
+  color: var(--c-blue);
 }
-
-
-

@@ -1,203 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustainability</title>
-    <link rel="stylesheet" href="/css/base.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/styletwo.css"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainability</title>
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/styletwo.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
+
 <body>
-    <header>
-        <div class="bluebanner">
-          <p>Free shipping to Denmark</p>
-          <p>Shipping to: Denmark (DKK)</p>
-        </div>
-  
-        <div>
-          <nav class="mainnav">
-            <ul>
-              <li><a href="#" class="menu">New In</a></li>
-              <li>
-                <a href="#" class="menu">Shop</a>
-                <div class="drop">
-                  <ul class="shop1">
-                    <li>BAGS</li>
-                    <li><a href="" class="shopall">Shop All</a></li>
-                    <li><a href="" class="crossbody">Crossbody Bags</a></li>
-                    <li><a href="" class="shoulder">Shoulder Bags</a></li>
-                    <li><a href="" class="tote">Tote Bags</a></li>
-                  </ul>
-                  <ul class="shop1">
-                    <li>CLOTHING</li>
-                    <li><a href="#">New In</a></li>
-                  </ul>
-                  <ul class="shop1">
-                    <li>ACCESSORIES</li>
-                    <li><a href="#">Wallets</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li><a href="#" class="menu">About</a></li>
-              <li><a href="#" class="menu">Silfen Play</a></li>
-              <li><a href="#" class="menu">Sustainability</a></li>
-            </ul>
-            <img
-              class="logomainnav"
-              src="/assets/SILFEN - LOGO (LILLE)1 (002).png"
-              alt="silfen logo text display"
-            />
-            <div class="navicons">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="20"
-                height="20"
-                fill="currentColor"
-                class="bi bi-person"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-search"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-heart"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
-                />
-              </svg>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
-                fill="currentColor"
-                class="bi bi-bag"
-                viewBox="0 0 16 16"
-              >
-                <path
-                  d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
-                />
-              </svg>
+  <header>
+    <div class="bluebanner">
+      <p>Free shipping to Denmark</p>
+      <p>Shipping to: Denmark (DKK)</p>
+    </div>
+
+    <div>
+      <nav class="mainnav">
+        <ul>
+          <li><a href="#" class="menu">New In</a></li>
+          <li>
+            <a href="#" class="menu">Shop</a>
+            <div class="drop">
+              <ul class="shop1">
+                <li>BAGS</li>
+                <li><a href="" class="shopall">Shop All</a></li>
+                <li><a href="" class="crossbody">Crossbody Bags</a></li>
+                <li><a href="" class="shoulder">Shoulder Bags</a></li>
+                <li><a href="" class="tote">Tote Bags</a></li>
+              </ul>
+              <ul class="shop1">
+                <li>CLOTHING</li>
+                <li><a href="#">New In</a></li>
+              </ul>
+              <ul class="shop1">
+                <li>ACCESSORIES</li>
+                <li><a href="#">Wallets</a></li>
+              </ul>
             </div>
-            <div class="burguermenu"></div>
-          </nav>
+          </li>
+          <li><a href="#" class="menu">About</a></li>
+          <li><a href="#" class="menu">Silfen Play</a></li>
+          <li><a href="#" class="menu">Sustainability</a></li>
+        </ul>
+        <img class="logomainnav" src="/assets/SILFEN - LOGO (LILLE)1 (002).png" alt="silfen logo text display" />
+        <div class="navicons">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+            viewBox="0 0 16 16">
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
+          </svg>
         </div>
-      </header>
-      <div class="bannerS">
-        <div class="bannerStext">
-          <h1>Sustainability<br>
-            <span>Responsibility</span>
-          </h1>
+        <div class="burguermenu"></div>
+      </nav>
+    </div>
+  </header>
+  <div class="bannerS">
+    <div class="bannerStext gs_reveal gs_reveal_fromLeft">
+      <h1>Sustainability<br>
+        <span>is a fuzzy word</span>
+      </h1>
+    </div>
+    <section class="gs_reveal gs_reveal_fromRight introS">
+      <div class="arrow arr1"></div>
+      <div class="firstPara">
+        <p>At SILFEN it means<br><strong>putting action behind the words,</strong> considering all stakeholders and
+          always aiming a little bit higher when creating another collection.</p>
+        <p><strong>We always strive to deliver high quality products in better materials. </strong></p>
       </div>
-       <section class="introS">
-            <div class="firstPara">
-                <p> <strong>Sustainability</strong> is a fuzzy word. At SILFEN it means putting action behind the words, considering all stakeholders and always aiming a little bit higher when creating another collection. As a young, global fashion brand, it is our duty to take care of the planet, not only for own sake, but for all future generations to come.</p>
-            </div>
-            <br>
-            <div class="secondPara">
-                <p> As of 2020 we presented the brand under a new name, <strong>” SILFEN”</strong>. We believe that this small change further represents a new and greener future for SILFEN. We always strive to deliver high quality products in better materials. Within the next couple of collections, we will start implementing more conscious initiatives within the company, and we hope that this inspire you – our customers and consumers, as we are all in this together!</p>
-            </div>
-        </section>
-        <section class="materialsS">
-          <div class="materialsSpic">
-            <img src="../images/materials_pic.png" alt="materials">
-            
-          </div>
-          <div class="materialsStext">
-            <h2>MATERIALS</h2>
-            <br>
-            <p>At Silfen we  believe in production which leaves as little footprint on our mother esrth as possible. That’s why we choose orgnacic or recylced materials. </p>
-            <br>
-            <p><a href="#">Learn more</a></p>
+      <br>
+      <div class="secondPara">
+        <h5 class="yellowheadline center">SUSTAINABILITY<br>
+          X<br>
+          RESPONSIBILITY</h5>
+        <p>As a young, global fashion brand, <strong>it is our duty to take care of the planet</strong> not only for own
+          sake, but for
+          all future generations to come.</p>
+      </div>
+      <div class="thirdPara">
+        <p class="thirdp">We keep on implementing more conscious initiatives within the company, and we hope that this
+          inspire you –
+          our customers and consumers, as we are all in this together!</p>
+      </div>
+    </section>
+    <section class="materialsS">
+      <div class="materialsSpic">
+        <img src="../images/materials_pic.png" alt="materials">
 
-          </div>
-        </section>
-        <section class="workS">
-          <div class="workStext">
-            <h2>WORK ETHICS</h2>
-            <br>
-            <p>We feel responsibility not only for environment but especially for people who make Silfen happen. Read more what we are doing for them.</p>
-            <br>
-            <p><a href="#">Learn more</a></p>
-
-          </div>
-          <div class="workSpic">
-            <img src="../images/work_pic.png" alt="work ethics">
-            
-
-          </div>
-        </section>
+      </div>
+      <div class="materialsStext">
+        <h2>MATERIALS</h2>
         <br>
-        <section class="copyMS">
-          <div class="MSicon">
-            <h2>COTTON</h2>
-            
-            <img src="../images/0COTTON.svg" alt="cotton svg">
-            
-            
-            <p>Our cotton is either made from eco-friendly or organic cotton. Both materials require <strong>far less water consumption than conventional cotton products</strong>, therefore has a smaller impact on the environment. </p>
-          </div>
-          <div class="MSicon">
-            <h2>LEATHER</h2>
-            <img src="../images/0leatherrr.svg" alt="leather svg">
-            <p>All leather goods are made from sustainable high-quality calf leather and is a bi product of the food industry, meaning that <strong>every part of the animal is utilized in various industries</strong>. All our components, zippers, thread, reinforcement, glue etc., are made from high-quality raw materials.</p>
-          </div>
-          <div class="MSicon">
-            <h2>VEGAN</h2>
-            <img src="../images/0vegan.svg" alt="vegan svg">
-            <p>All non-leather material – e.g. our nylon, lacquer – are all <strong>100% vegan</strong>, promising that these products do not contain any parts from animals.</p>
-          </div>
-          <div class="MSicon">
-            <h2>rPET</h2>
-            <img src="../images/0rpetas.svg" alt="rPET svg">
-            <p>
-              rPET (recycled polyethylene terephthalate)  is primarily <strong>made from plastic waste</strong> collected from the oceans, or from recycled plastic bottles gathered from all over the world.
-            </p>
-          </div>
-        </section>
-        <section class="copyWS">
-          <div class="WSicon">
-            <h2>WATER</h2>
-            <img src="../images/0water.svg" alt="water svg">
-            <p>The fashion industry is one of the most polluting industries worldwide, and one of the biggest issues is the use and contamination of drinking water. We try to <strong>minimize the water consumption in our production</strong> in an effort to decrease its negative impact on the environment and to ensure local access to clean water.</p>
-          </div>
-          <div class="WSicon">
-            <h2>SHIPPING</h2>
-            <img src="../images/0shippinh.svg" alt="shipping svg">
-            <p> We  choose environmental-friendly shipping options when applicable.  We strive to <strong>ship as much as possible in bulk</strong> – mostly by sea or train. These are the most environmentally friendly modes of shipping, reducing polluting emissions.</p>
-          </div>
-          <div class="WSicon">
-            <h2>WORK CONDITIONS</h2>
-            <img src="../images/0working.svg" alt="work conditions svg">
-            <p>Team Silfen provides insurance to all our hard-working employees as well as their family. Our factories also grant pensions to all employees, providing them with financial stability after retirement.
+        <p>At Silfen we believe in production which leaves as little footprint on our mother esrth as possible. That’s
+          why we choose orgnacic or recylced materials. </p>
+        <br>
+        <p><a href="#">Learn more</a></p>
 
-              We support the different religions of employees and protect their right to engage with rituals, prayers etc. at any time. We condemn discrimination, and make sure that the employees are protected from prejudice and injustice at the workplace.
-              
-              We visit our manufacturers regularly to ensure that they follow the issued principles regarding working conditions, quality, pollution etc. This allows us to promise our customers that a SILFEN bag is always crafted in a responsible manner.</p>
-          </div>
-        </section>
-        
+      </div>
+    </section>
+    <section class="workS">
+      <div class="workStext">
+        <h2>WORK ETHICS</h2>
+        <br>
+        <p>We feel responsibility not only for environment but especially for people who make Silfen happen. Read more
+          what we are doing for them.</p>
+        <br>
+        <p><a href="#">Learn more</a></p>
 
+      </div>
+      <div class="workSpic">
+        <img src="../images/work_pic.png" alt="work ethics">
+
+
+      </div>
+    </section>
+    <br>
+    <section class="copyMS">
+      <div class="MSicon">
+        <h2>COTTON</h2>
+
+        <img src="../images/0COTTON.svg" alt="cotton svg">
+
+
+        <p>Our cotton is either made from eco-friendly or organic cotton. Both materials require <strong>far less water
+            consumption than conventional cotton products</strong>, therefore has a smaller impact on the environment.
+        </p>
+      </div>
+      <div class="MSicon">
+        <h2>LEATHER</h2>
+        <img src="../images/0leatherrr.svg" alt="leather svg">
+        <p>All leather goods are made from sustainable high-quality calf leather and is a bi product of the food
+          industry, meaning that <strong>every part of the animal is utilized in various industries</strong>. All our
+          components, zippers, thread, reinforcement, glue etc., are made from high-quality raw materials.</p>
+      </div>
+      <div class="MSicon">
+        <h2>VEGAN</h2>
+        <img src="../images/0vegan.svg" alt="vegan svg">
+        <p>All non-leather material – e.g. our nylon, lacquer – are all <strong>100% vegan</strong>, promising that
+          these products do not contain any parts from animals.</p>
+      </div>
+      <div class="MSicon">
+        <h2>rPET</h2>
+        <img src="../images/0rpetas.svg" alt="rPET svg">
+        <p>
+          rPET (recycled polyethylene terephthalate) is primarily <strong>made from plastic waste</strong> collected
+          from the oceans, or from recycled plastic bottles gathered from all over the world.
+        </p>
+      </div>
+    </section>
+    <section class="copyWS">
+      <div class="WSicon">
+        <h2>WATER</h2>
+        <img src="../images/0water.svg" alt="water svg">
+        <p>The fashion industry is one of the most polluting industries worldwide, and one of the biggest issues is the
+          use and contamination of drinking water. We try to <strong>minimize the water consumption in our
+            production</strong> in an effort to decrease its negative impact on the environment and to ensure local
+          access to clean water.</p>
+      </div>
+      <div class="WSicon">
+        <h2>SHIPPING</h2>
+        <img src="../images/0shippinh.svg" alt="shipping svg">
+        <p> We choose environmental-friendly shipping options when applicable. We strive to <strong>ship as much as
+            possible in bulk</strong> – mostly by sea or train. These are the most environmentally friendly modes of
+          shipping, reducing polluting emissions.</p>
+      </div>
+      <div class="WSicon">
+        <h2>WORK CONDITIONS</h2>
+        <img src="../images/0working.svg" alt="work conditions svg">
+        <p>Team Silfen provides insurance to all our hard-working employees as well as their family. Our factories also
+          grant pensions to all employees, providing them with financial stability after retirement.
+
+          We support the different religions of employees and protect their right to engage with rituals, prayers etc.
+          at any time. We condemn discrimination, and make sure that the employees are protected from prejudice and
+          injustice at the workplace.
+
+          We visit our manufacturers regularly to ensure that they follow the issued principles regarding working
+          conditions, quality, pollution etc. This allows us to promise our customers that a SILFEN bag is always
+          crafted in a responsible manner.</p>
+      </div>
+    </section>
+
+    <footer></footer>
+    <script src="/js/gsap.js"></script>
 
 </body>
+
 </html>
