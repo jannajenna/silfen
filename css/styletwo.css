@@ -98,7 +98,8 @@
     }
 }
 .copyMS{
-    margin: 4vh;
+    background-color: var(--c-blue);
+    color: white;
     
 }
 .MSicon h2{
@@ -154,8 +155,8 @@
 
 }
 .copyWS{
-    background-color: var(--c-blue);
-    color: white;
+    background-color: white;
+    color:var(--c-blue);
 }
 
 
