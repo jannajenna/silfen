@@ -7,8 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-  <link rel="stylesheet" href="css/base.css" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/css/base.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 
 <body>
@@ -73,142 +73,148 @@
       </nav>
     </div>
   </header>
-  <div class="hero">
-    <div class="herotext">
-      <p>Welcome to Grandma's house</p>
-      <h1>New Collection<br>
-        <span class="italic">Online now</span>
-      </h1>
-    </div>
-    <a class="pbutton" href="/html/productlist.html" class="btn">Shop now</a>
-  </div>
   <main class="HP">
-    <div class="HPfilters">
-      <a href="#">Featured</a>
-      <a href="#">New Arrivals</a>
-      <a href="#">Bestsellers</a>
+    <div class="hero">
+      <div class="herotext">
+        <p>Welcome to Grandma's house</p>
+        <h1>New Collection<br>
+          <span class="italic">Online now</span>
+        </h1>
+      </div>
+      <a class="pbutton btn" href="/html/productlist.html">Shop now</a>
     </div>
-    <section class="HPproducts">
-      <template id="template">
-        <article id="HPcart">
-          <a href="#"><img class="hoverImg" src="./images/516952_WATERGREEN_FRONT.JPG" alt=""></a>
-          <a href="#" class="b bagname">Bumbag Kim</a>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
+    <div class="wrapper">
+      <div class="HPfilters">
+        <a href="#">Featured</a>
+        <a href="#">New Arrivals</a>
+        <a href="#">Bestsellers</a>
+      </div>
+      <section class="HPproducts">
+        <template id="template">
+          <article id="HPcart">
+            <a href="#"><img class="hoverImg" src="./images/516952_WATERGREEN_FRONT.JPG" alt=""></a>
+            <a href="#" class="b bagname">Bumbag Kim</a>
+            <p class="price">DKK 399,00</p>
+            <div class="colorcircles">
+              <div class="circleblue">
+              </div>
             </div>
-          </div>
-          <a href="#" class="addtocart center hide">
-            <p>Add to cart</p>
+            <a href="#" class="addtocart center hide">
+              <p>Add to cart</p>
+            </a>
+          </article>
+        </template>
+      </section>
+      <section class="fav">
+        <div class="favText center">
+          <h4>You can never go wrong with a classic</h4>
+          <h4>Your favorite SILFEN bags in high-quality calf leather ❤️</h4>
+          <h4>All SILFEN leather is a bi-product of the meat industry. That means that a SILFEN bag is a better choice
+          </h4>
+          <a href="/html/productlist.html" class="btn">
+            <p class="bbutton">Find your fav'</p>
           </a>
-        </article>
-      </template>
-    </section>
-    <section class="fav">
-      <div class="favText center">
-        <h4>You can never go wrong with a classic</h4>
-        <h4>Your favorite SILFEN bags in high-quality calf leather ❤️</h4>
-        <h4>All SILFEN leather is a bi-product of the meat industry. That means that a SILFEN bag is a better choice
-        </h4>
-        <a href="/html/productlist.html" class="btn">
-          <p class="bbutton">Find your fav'</p>
-        </a>
-      </div>
-      <img class="favimg" src="./images/fav.jpeg" alt="">
-    </section>
-    <section class="sust">
-      <img class="sustimg" src="./images/sust.jpeg" alt="">
-      <div class="sustainText center">
-        <h4>
-          At SILFEN, we want to make a difference. We offer gorgeous bags made from recycled materials, which helps both
-          you and us be better, while not comprising. We think that’s pretty cool.</h4>
-        <a href="/html/sustainability.html" class="btn">
-          <p class="bbutton">Sustainability</p>
-        </a>
-      </div>
-    </section>
-    <section class="zeroImpact">
-      <div>
-        <h1>The Path<br> To Zero Impact</h1>
-        <p class="grey">Since day one, we have launched various initiatives to keep our carbon footprint to a minimum as
-          well as making conscious decisions concerning the social impact on the communities in the countries, in which
-          we
-          operate. Explore our sustainable selection of bags made from recycled nylon, vegan leather, eco-friendly or
-          organic cotton here.</p>
-        <a class="link" href="/html/sustainability.html">Learn more</a>
-      </div>
-      <div class="zeroProducts">
-        <article class="zeroCart HPcart">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <p class="b bagname">Bumbag Kim</p>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
-            </div>
-          </div>
-        </article>
-        <article class="zeroCart HPcart">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <p class="b bagname">Bumbag Kim</p>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
-            </div>
-          </div>
-        </article>
-        <article class="zeroCart HPcart">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <p class="b bagname">Bumbag Kim</p>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section class="HPShop">
-      <article class="newArrivals">
-        <div class="imglink">
-          <a href="/html/productlist.html"><img class="hoverresize" src="./images/arrivals.png" alt=""></a>
         </div>
-        <h2 class="center">Shop New Arrivals</h2>
-        <p class="grey">Browse through our new collection</p>
-      </article>
-      <article class="Classics">
-        <div class="imglink">
-          <a href="/html/productlist.html"><img class="hoverresize" src="./images/classics.png" alt=""></a>
+        <img class="favimg" src="./images/fav.jpeg" alt="">
+      </section>
+      <section class="sust">
+        <img class="sustimg" src="./images/sust.jpeg" alt="">
+        <div class="sustainText center">
+          <h4>
+            At SILFEN, we want to make a difference. We offer gorgeous bags made from recycled materials, which helps
+            both
+            you and us be better, while not comprising. We think that’s pretty cool.</h4>
+          <a href="/html/sustainability.html" class="btn">
+            <p class="bbutton">Sustainability</p>
+          </a>
         </div>
-        <h2 class="center">Shop Classics</h2>
-        <p class="grey">Find your new BFF right here</p>
-      </article>
-      <article class="Crossbody">
-        <div class="imglink">
-          <a href="/html/productlist.html"><img class="hoverresize" src="./images/crossbody.png" alt=""></a>
+      </section>
+      <section class="zeroImpact">
+        <div>
+          <h1>The Path<br> To Zero Impact</h1>
+          <p class="grey">Since day one, we have launched various initiatives to keep our carbon footprint to a
+            minimum
+            as
+            well as making conscious decisions concerning the social impact on the communities in the countries, in
+            which
+            we
+            operate. Explore our sustainable selection of bags made from recycled nylon, vegan leather, eco-friendly
+            or
+            organic cotton here.</p>
+          <a class="link" href="/html/sustainability.html">Learn more</a>
         </div>
-        <h2 class="center">Shop Crossbody bags</h2>
-        <p class="grey">The perfect companion for everyday-life</p>
-      </article>
-    </section>
-    <section class="HPSoMe">
-      <h1>#SilfenVibes</h1>
-      <h3 class="center">Share your pictures with us using the hashtag #SilfenVibes.<br>
-        We've been waiting for you!​</h3>
-      <div class="SoMeImg">
-        <a class="link" href="https://www.instagram.com/silfenstudio/"><img class="square" src="./images/1.png"
-            alt=""></a>
-        <a class="link" href="https://www.instagram.com/silfenstudio/"><img class="square" src="./images/2.png"
-            alt=""></a>
-        <a class="link" href="https://www.instagram.com/silfenstudio/"><img class="square" src="./images/3.png"
-            alt=""></a>
-        <a class="link" href="https://www.instagram.com/silfenstudio/"><img class="square" src="./images/4.png"
-            alt=""></a>
-        <a class="link" href="https://www.instagram.com/silfenstudio/"><img class="square" src="./images/5.png"
-            alt=""></a>
-      </div>
-      <a class="link" href="https://www.instagram.com/silfenstudio/">Follow @SilfenStudio</a>
-    </section>
-    </section>
+        <div class="zeroProducts">
+          <article class="zeroCart HPcart">
+            <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
+            <p class="b bagname">Bumbag Kim</p>
+            <p class="price">DKK 399,00</p>
+            <div class="colorcircles">
+              <div class="circleblue">
+              </div>
+            </div>
+          </article>
+          <article class="zeroCart HPcart">
+            <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
+            <p class="b bagname">Bumbag Kim</p>
+            <p class="price">DKK 399,00</p>
+            <div class="colorcircles">
+              <div class="circleblue">
+              </div>
+            </div>
+          </article>
+          <article class="zeroCart HPcart">
+            <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
+            <p class="b bagname">Bumbag Kim</p>
+            <p class="price">DKK 399,00</p>
+            <div class="colorcircles">
+              <div class="circleblue">
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="HPShop">
+        <article class="newArrivals">
+          <div class="imglink">
+            <a href="/html/productlist.html"><img class="hoverresize" src="./images/arrivals.png" alt=""></a>
+          </div>
+          <h2 class="center">Shop New Arrivals</h2>
+          <p class="grey">Browse through our new collection</p>
+        </article>
+        <article class="Classics">
+          <div class="imglink">
+            <a href="/html/productlist.html"><img class="hoverresize" src="./images/classics.png" alt=""></a>
+          </div>
+          <h2 class="center">Shop Classics</h2>
+          <p class="grey">Find your new BFF right here</p>
+        </article>
+        <article class="Crossbody">
+          <div class="imglink">
+            <a href="/html/productlist.html"><img class="hoverresize" src="./images/crossbody.png" alt=""></a>
+          </div>
+          <h2 class="center">Shop Crossbody bags</h2>
+          <p class="grey">The perfect companion for everyday-life</p>
+        </article>
+      </section>
+      <section class="HPSoMe">
+        <h1>#SilfenVibes</h1>
+        <h3 class="center">Share your pictures with us using the hashtag #SilfenVibes.<br>
+          We've been waiting for you!​</h3>
+        <div class="SoMeImg">
+          <a class="link" href="https://www.instagram.com/silfenstudio/"><img class="square" src="./images/1.png"
+              alt=""></a>
+          <a class="link" href="https://www.instagram.com/silfenstudio/"><img class="square" src="./images/2.png"
+              alt=""></a>
+          <a class="link" href="https://www.instagram.com/silfenstudio/"><img class="square" src="./images/3.png"
+              alt=""></a>
+          <a class="link" href="https://www.instagram.com/silfenstudio/"><img class="square" src="./images/4.png"
+              alt=""></a>
+          <a class="link" href="https://www.instagram.com/silfenstudio/"><img class="square" src="./images/5.png"
+              alt=""></a>
+        </div>
+        <a class="link" href="https://www.instagram.com/silfenstudio/">Follow @SilfenStudio</a>
+      </section>
+    </div>
   </main>
   <!-- FOOTER -->
   <footer>

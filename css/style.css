@@ -518,6 +518,9 @@ input[type="number"] {
     grid-template-columns: repeat(4, 1fr);
   }
   main {
+    margin: 0px;
+  }
+  .wrapper {
     margin: 0px 40px;
   }
   .zeroImpact {
