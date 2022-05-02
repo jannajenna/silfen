@@ -187,7 +187,7 @@ nav .navitems .navlink:hover {
 .droptext:hover .drop {
   font-size: 14px;
   position: absolute;
-  margin-top: 29px;
+  margin-top: 26px;
   /*  padding: 10px 32px 50px 32px; */
   width: 100%;
   display: flex;
