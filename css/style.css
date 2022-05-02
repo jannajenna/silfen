@@ -17,6 +17,26 @@
   height: 25vh;
   justify-content: center;
 }
+.PL {
+  margin-bottom: 100px;
+}
+.PLpagination {
+  display: grid;
+  justify-items: center;
+}
+.pagination {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 180px;
+  color: var(--c-black-25);
+  border: 1px solid var(--c-black-25);
+  padding: 1rem;
+  margin: 80px;
+}
+.current {
+  color: var(--c-black);
+}
 .herotext,
 h1.PLherotext {
   margin-left: 20px;
@@ -36,11 +56,11 @@ h1.PLherotext {
   font-style: italic;
 }
 .pbutton {
-  position: relative;
   padding: 0.8rem 2.2rem;
   background-color: var(--c-white);
   margin-bottom: 2rem;
-  width: auto;
+  cursor: pointer;
+  z-index: 5;
 }
 .btn {
   font-weight: 400;
@@ -73,10 +93,13 @@ p {
   display: flex;
   gap: 2rem;
 }
-.HPfilters p {
+.HPfilters a {
   font-size: 1.2rem;
   padding-top: 2rem;
   padding-bottom: 1rem;
+}
+.HPfilters a:hover {
+  color: var(--c-black-25);
 }
 #HPcart,
 .PPcart {
@@ -101,6 +124,7 @@ p {
 }
 .PLcart {
   margin-top: 20px;
+  position: relative;
 }
 .colorcircles {
   position: absolute;
@@ -144,6 +168,7 @@ h3 {
   flex-wrap: nowrap;
   overflow: hidden;
   position: relative;
+  gap: 20px;
 }
 .zeroCart {
   min-width: 90%;
@@ -159,6 +184,10 @@ h3 {
   margin: 2rem 0;
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+.link:hover,
+.link:active {
+  color: var(--c-black-50);
 }
 .HPShop {
   margin-top: 3rem;
@@ -176,13 +205,27 @@ h3 {
   aspect-ratio: 1/1;
   margin-top: 1rem;
 }
+.square:hover {
+  opacity: 80%;
+}
+.hoverresize:hover {
+  transform: scale(1.05);
+  transition: all 450ms cubic-bezier(0.195, 0.29, 0.045, 0.995) 0s;
+}
 .center {
   text-align: center;
+}
+.HPSoMe {
+  margin-top: 40px;
+  margin-bottom: 100px;
 }
 .HPSoMe .link {
   display: grid;
   justify-items: center;
-  margin: 4rem 0 10rem 0;
+}
+.imglink {
+  width: 100%;
+  overflow: hidden;
 }
 h4 {
   font-family: "Inter";
@@ -233,6 +276,12 @@ h4 {
   border-radius: 5px;
   font-weight: 400;
 }
+.bbutton:hover,
+.bbutton:active {
+  color: #6ec1e4;
+  background-color: var(--c-white);
+  box-shadow: 1px 1px 20px var(--c-black-25);
+}
 .fav .btn,
 .sust .btn {
   display: grid;
@@ -279,12 +328,17 @@ h4 {
 .PPatw {
   margin-top: 20px;
 }
+.PPcolor .circleblue {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 30px;
+}
 .PPatc {
   display: flex;
   gap: 20px;
 }
 input[type="number"] {
-  width: 100px;
+  width: 120px;
   border: 1px solid var(--c-black);
   padding: 0.7rem;
 }
@@ -293,6 +347,10 @@ input[type="number"] {
   background-color: var(--c-black);
   padding: 0.7rem;
   width: 100%;
+  cursor: pointer;
+}
+.PPatcbutton:hover {
+  background-color: #6ec1e4;
 }
 .PPplus {
   margin: 40px 0;
@@ -460,6 +518,9 @@ input[type="number"] {
     grid-template-columns: repeat(4, 1fr);
   }
   main {
+    margin: 0px;
+  }
+  .wrapper {
     margin: 0px 40px;
   }
   .zeroImpact {
@@ -477,5 +538,8 @@ input[type="number"] {
   h1.PLherotext {
     font-size: 3.5rem;
     margin-left: 40px;
+  }
+  .HPShop {
+    gap: 20px;
   }
 }

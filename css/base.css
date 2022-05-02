@@ -201,7 +201,7 @@ nav ul li:hover .drop {
 
 /* MAIN */
 
-main {
+.wrapper {
   margin: 0px 20px;
 }
 
