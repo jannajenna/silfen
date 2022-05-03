@@ -1,5 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const url = `https://abarela.dk/silfen/silfen_wordpress/wp-json/wp/v2/product`;
+const query = urlParams.get("category");
 
 fetch(url)
   .then((response) => {
@@ -28,6 +29,21 @@ function showProduct(product) {
   copy.querySelector(".price").textContent = "DKK " + product.price + ",00";
 
   copy.querySelector(".hoverImg").src = product.image.guid;
+
+  console.log("yes");
+
+  copy
+    .querySelector("a")
+    .setAttribute("href", `html/product_view.html?id=${product.id}`);
+  // document
+  //   .querySelector(".a2")
+  //   .setAttribute("href", `productlist.html?category=frames_and_mattresses`);
+  // document
+  //   .querySelector(".a3")
+  //   .setAttribute("href", `productlist.html?category=mattresses`);
+  // document
+  //   .querySelector(".a4")
+  //   .setAttribute("href", `productlist.html?category=accessories`);
 
   // grab parent
   const parent = document.querySelector(".HPproducts");
