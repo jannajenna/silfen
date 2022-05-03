@@ -116,6 +116,8 @@
 .workStext {
   text-align: center;
   margin: 3vh;
+  line-height: 2rem;
+  font-size: 2rem;
 }
 .materialsStext h2,
 .workStext h2 {
@@ -127,6 +129,13 @@
   padding: 1vh;
   padding-left: 4vh;
   padding-right: 4vh;
+  margin: 2vh;
+}
+.materialsStext a:hover,
+.workStext a:hover{
+    background-color: var(--c-yellow);
+    border:0.3px solid var(--c-yellow);
+    transition: all 0.5s;
 }
 .materialsSpic,
 .workSpic {
@@ -177,7 +186,7 @@
 .MSicon p,
 .WSicon p {
   margin: 5vh;
-  font-size: 1.5vh;
+  font-size: 1rem;
 }
 .MSicon img {
   display: block;
@@ -264,19 +273,80 @@
   margin: 10%;
 }
 
-.video h1 {
+.loop h1 {
   text-transform: uppercase;
-  color: var(--c-yellow);
+  color: var(--c-blue);
   font-weight: bold;
-  font-size: 5vh;
+  font-size: 4vh;
+  text-align: left;
+  margin-bottom: 2vh;
+}
+
+.prtitle {
+  background-color: var(--c-blue);
   text-align: center;
+  color: white;
+  padding:5vh;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.prtitle2{
+background-color: white;
+  text-align: center;
+  color: var(--c-blue);
+  padding:5vh;
+  text-transform: uppercase;
+  font-weight: bold;
+
 }
 
-.titleWS {
-  justify-self: center;
-}
-
-.video {
+.videowrap {
   display: block;
   width: auto;
+  margin: 10vh;
+}
+@media only screen and (min-width: 1200px){
+.videowrap{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: center;
+}
+.video{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+}
+
+.vidtext{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 10vh;
+}
+.loop {
+    overflow: hidden;
+    display: inline-flex;
+    white-space: nowrap;
+    position: relative;
+    width: 100vw;
+    height: 100px;
+}
+.looptext{
+
+    animation-name:loop;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-10%);
+        }
+    100% {
+            transform: translateX(0%);
+        }
 }
