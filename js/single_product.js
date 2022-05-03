@@ -1,6 +1,7 @@
 const urlParams = new URLSearchParams(window.location.search);
-const url = `https://abarela.dk/silfen/silfen_wordpress/wp-json/wp/v2/product`;
-const query = urlParams.get("category");
+const query = urlParams.get("id");
+const url = `https://abarela.dk/silfen/silfen_wordpress/wp-json/wp/v2/product?{"id" : {"$in" : ["${query}"]}}`;
+// const url = `https://hubemmd-34fa.restdb.io/rest/bed-fashion;
 
 fetch(url)
   .then((response) => {
@@ -20,21 +21,19 @@ fetch(url)
 
 function showProduct(product) {
   // grab the template\
-  const template = document.querySelector("#template").content;
-  // clone the template
-  const copy = template.cloneNode(true);
-  // change content
 
-  copy.querySelector(".bagname").textContent = product.productname;
-  copy.querySelector(".price").textContent = "DKK " + product.price + ",00";
+  document.querySelector(".PPname").textContent = product.productname;
+  document.querySelector(".PPprice").textContent =
+    "DKK " + product.price + ",00";
 
-  copy.querySelector(".hoverImg").src = product.image.guid;
+  document.querySelector(".PPproduct img").src = product.image.guid;
 
-  console.log("yes");
+  // console.log("yes");
 
-  copy
-    .querySelector("a")
-    .setAttribute("href", `html/product_view.html?id=${product.id}`);
+  // document
+  //   .querySelector("a")
+  //   .setAttribute("href", `html/product_view.html?category=accessories`);
+
   // document
   //   .querySelector(".a2")
   //   .setAttribute("href", `productlist.html?category=frames_and_mattresses`);
@@ -45,10 +44,10 @@ function showProduct(product) {
   //   .querySelector(".a4")
   //   .setAttribute("href", `productlist.html?category=accessories`);
 
-  // grab parent
-  const parent = document.querySelector(".HPproducts");
-  // append
-  parent.appendChild(copy);
+  // // grab parent
+  // const parent = document.querySelector(".HPproducts");
+  // // append
+  // parent.appendChild(copy);
 }
 
 let atc = document.querySelector(".hoverImg");

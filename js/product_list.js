@@ -34,7 +34,7 @@ function showProduct(product) {
 
   copy
     .querySelector("a")
-    .setAttribute("href", `html/product_view.html?id=${product.id}`);
+    .setAttribute("href", `html/product_view.html?category=accessories`);
   // document
   //   .querySelector(".a2")
   //   .setAttribute("href", `productlist.html?category=frames_and_mattresses`);
