@@ -81,7 +81,7 @@
 .workSpic{
     justify-self: center;
 }
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 600px) {
     .materialsS,
     .workS{
         display: grid;
@@ -89,30 +89,48 @@
         align-items: center;
     }
 
-    
+}
+@media only screen and (max-width: 600px) {
+    .materialsS,
+    .workS{
+        display: grid;
+        grid-template-columns:1fr;
+        align-items: center;
+    }
+    .workStext{
+        grid-row: 2/3;
+    }
+
 }
 @media only screen and (min-width: 1200px){
     .materialsStext,
     .workStext{
         margin:8vh;
     }
+    
 }
 .copyMS{
     background-color: var(--c-blue);
     color: white;
+    padding:10vh;
     
 }
+.copyWS{
+    padding: 10vh;
+}
+
 .MSicon h2{
-    color: var(--c-blue);
+    color:white;
 }
-.MSicon,
-.WSicon h2, p{
+.MSicon h2,
+.WSicon h2{
     text-align: center;
-    margin: 1vh;
+    margin: 2vh;
 }
-.MSicon,
-.WSicon{
+.MSicon p,
+.WSicon p{
     margin: 5vh;
+    font-size: 1.5vh;
 }
 .MSicon img{
     display: block;
@@ -120,13 +138,31 @@
     margin-right: auto;
     width: 40%;
 }
+.WSicon h2,
+.WSicon p{
+    color: var(--c-blue);
+}
 .WSicon img{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
 }
-@media only screen and (min-width: 620px){
+@media only screen and (min-width: 1200px){
+    .copyMS{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .copyWS{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 20vh;
+        margin-right: 20vh;
+    }
+    
+}
+@media only screen and (max-width: 1199px){
     .copyMS{
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -135,8 +171,21 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
-    
 }
+
+@media only screen and (max-width: 600px){
+    .copyMS{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .copyWS{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+    
 @media only screen and (min-width: 800px){
     .MSicon img{
         width: 25%;
@@ -152,6 +201,7 @@
         margin-left: 5vh;
         margin-right: 5vh;
     }
+    
 
 }
 .copyWS{
@@ -159,5 +209,33 @@
     color:var(--c-blue);
 }
 
+.video{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 50vh;
+    width: 70%;
+    background-size:cover;
+    margin: 10%;
+    
+}
 
+.video h1{
+    text-transform: uppercase;
+    color: var(--c-yellow);
+    font-weight: bold;
+    font-size: 5vh;
+    text-align: center;
+}
 
+.titleWS{
+    justify-self: center;
+}
+
+.video{
+    display: block;
+    width: auto;
+}
