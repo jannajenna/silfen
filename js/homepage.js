@@ -25,32 +25,27 @@ function showProduct(product) {
   // change content
 
   copy.querySelector(".bagname").textContent = product.productname;
-  copy.querySelector(".price").textContent = "DKK " + product.price;
-  // copy.querySelector(
-  //   ".smallProduct img"
-  // ).src = `https://hubkur.dk/databases1/wp-content/uploads/2022/03/house_2.jpg`;
+  copy.querySelector(".price").textContent = "DKK " + product.price + ",00";
+
   copy.querySelector(".hoverImg").src = product.image.guid;
 
-  // document.body.style.backgroundImage = "url('img_tree.png')
-
-  // ).src = `https://hubkur.dk/databases1/wp-content/uploads/2022/03/house_${product._id}.jpg`;
   // grab parent
   const parent = document.querySelector(".HPproducts");
   // append
   parent.appendChild(copy);
 }
 
-// let atc = document.querySelector(".hoverImg");
-// let element = document.querySelector(".addtocart");
-// atc.addEventListener("mouseenter", function () {
-//   showaddtocart();
-// });
-// atc.addEventListener("mouseleave", function () {
-//   hideaddtocart();
-// });
-// function showaddtocart() {
-//   element.classList.remove("hide");
-// }
-// function hideaddtocart() {
-//   element.classList.add("hide");
-// }
+let atc = document.querySelector(".hoverImg");
+let element = document.querySelector(".addtocart");
+atc.addEventListener("mouseenter", function () {
+  showaddtocart();
+});
+atc.addEventListener("mouseleave", function () {
+  hideaddtocart();
+});
+function showaddtocart() {
+  element.classList.remove("hide");
+}
+function hideaddtocart() {
+  element.classList.add("hide");
+}
