@@ -178,17 +178,18 @@ nav .navitems .navlink:hover {
 .drop {
   display: block;
   font-size: 14px;
+  top: 33px;
+  left: 0px;
+  width: 100%;
   position: absolute;
   flex-direction: row;
   background-color: var(--c-white);
-  display: none;
 }
 
-.droptext:hover .drop {
+.drop {
   font-size: 14px;
-  position: absolute;
   margin-top: 26px;
-  /*  padding: 10px 32px 50px 32px; */
+  padding: 10px 2rem;
   width: 100%;
   display: flex;
   flex-direction: row;
