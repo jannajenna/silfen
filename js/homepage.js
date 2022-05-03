@@ -48,4 +48,47 @@ function showaddtocart() {
 }
 function hideaddtocart() {
   element.classList.add("hide");
+  // let atc = document.querySelector(".hoverImg");
+  // let element = document.querySelector(".addtocart");
+  // atc.addEventListener("mouseenter", function () {
+  //   showaddtocart();
+  // });
+  // atc.addEventListener("mouseleave", function () {
+  //   hideaddtocart();
+  // });
+  // function showaddtocart() {
+  //   element.classList.remove("hide");
+  // }
+  // function hideaddtocart() {
+  //   element.classList.add("hide");
+  // }
+
+  window.addEventListener("load", burguermenuo);
+  /* Menu hover */
+
+  /* function hovermenu() {
+  document.getElementById("txtdrop").addEventListener("mouseover", function () {
+    document.getElementById("dropid").classList.remove("hide");
+  });
+} */
+
+  /* Burguer menu */
+
+  function burguermenuo() {
+    document.getElementById("openb").addEventListener("click", function () {
+      document.getElementById("openb").classList.add("hide");
+      document.getElementById("closeb").classList.remove("hide");
+      document.getElementById("closeb").addEventListener("click", burguermenux);
+      document.getElementById("tbcontent").classList.remove("hide");
+    });
+  }
+
+  function burguermenux() {
+    document.getElementById("closeb").addEventListener("click", function () {
+      document.getElementById("closeb").classList.add("hide");
+      document.getElementById("openb").classList.remove("hide");
+      document.getElementById("openb").addEventListener("click", burguermenuo);
+      document.getElementById("tbcontent").classList.add("hide");
+    });
+  }
 }
