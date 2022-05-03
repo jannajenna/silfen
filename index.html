@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <header>
@@ -15,292 +15,478 @@
         <p>Free shipping to Denmark</p>
         <p>Shipping to: Denmark (DKK)</p>
       </div>
-
       <div>
-        <nav class="mainnav">
-          <ul>
-            <li><a href="#" class="menu">New In</a></li>
-            <li>
-              <a href="#" class="menu">Shop</a>
-              <div class="drop">
-                <ul class="shop1">
-                  <li>BAGS</li>
-                  <li><a href="" class="shopall">Shop All</a></li>
-                  <li><a href="" class="crossbody">Crossbody Bags</a></li>
-                  <li><a href="" class="shoulder">Shoulder Bags</a></li>
-                  <li><a href="" class="tote">Tote Bags</a></li>
-                </ul>
-                <ul class="shop1">
-                  <li>CLOTHING</li>
-                  <li><a href="#">New In</a></li>
-                </ul>
-                <ul class="shop1">
-                  <li>ACCESSORIES</li>
-                  <li><a href="#">Wallets</a></li>
-                </ul>
+        <nav class="nav">
+          <div class="burguermenu">
+            <div class="burguericon">
+              <svg
+                id="openb"
+                xmlns="http://www.w3.org/2000/svg"
+                width="30"
+                height="30"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                />
+              </svg>
+              <svg
+                id="closeb"
+                xmlns="http://www.w3.org/2000/svg"
+                width="35"
+                height="35"
+                fill="currentColor"
+                class="bi bi-x hide"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+            </div>
+            <div class="nav-menu">
+              <div class="nav-brand">
+                <img
+                  class="logosilfen"
+                  src="assets/SILFEN - LOGO (LILLE)1 (002).png"
+                />
+                <!-- <a href="#" class="silfenlogo">SILFEN</a> -->
               </div>
-            </li>
-            <li><a href="#" class="menu">About</a></li>
-            <li><a href="#" class="menu">Silfen Play</a></li>
-            <li><a href="#" class="menu">Sustainability</a></li>
-          </ul>
-          <img
-            class="logomainnav"
-            src="assets/SILFEN - LOGO (LILLE)1 (002).png"
-            alt="silfen logo text display"
-          />
-          <div class="navicons">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="currentColor"
-              class="bi bi-person"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-search"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-heart"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
-              />
-            </svg>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              class="bi bi-bag"
-              viewBox="0 0 16 16"
-            >
-              <path
-                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
-              />
-            </svg>
+            </div>
+            <div class="iconsnav flexrow">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-person"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-heart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-bag"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                />
+              </svg>
+            </div>
           </div>
-          <div class="burguermenu"></div>
+          <div class="textburguer hide" id="tbcontent">
+            <div class="navitems flexrow">
+              <div class="navline brow">
+                <a href="#" class="textblack">New In</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+              <div class="navline droptext">
+                <div class="brow">
+                  <a href="#" class="">Shop</a>
+                  <svg
+                    class="cross opencategories bi bi-chevron-right"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </div>
+                <div class="txtcategories">
+                  <ul class="shop1">
+                    <li>BAGS</li>
+                    <li><a href="" class="shopall">Shop All</a></li>
+                    <li><a href="" class="crossbody">Crossbody Bags</a></li>
+                    <li><a href="" class="shoulder">Shoulder Bags</a></li>
+                    <li><a href="" class="tote">Tote Bags</a></li>
+                  </ul>
+                  <ul class="shop1">
+                    <li>CLOTHING</li>
+                    <li><a href="#">New In</a></li>
+                  </ul>
+                  <ul class="shop1">
+                    <li>ACCESSORIES</li>
+                    <li><a href="#">Wallets</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="navline brow">
+                <a href="#" class="">About</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+              <div class="navline brow">
+                <a href="#" class="">Sustainability</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+              <div class="navline brow">
+                <a href="#" class="">Silfen Play</a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-chevron-right"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="contentmainnav flexrow">
+            <div class="navitems flexrow">
+              <div class="navlink">
+                <a href="#" class="textblack">New In</a>
+              </div>
+              <div class="navlink droptext" id="txtdrop">
+                <a href="#" class="">Shop</a>
+                <!--  <div class="drop">
+                  <ul class="shop1">
+                    <li>BAGS</li>
+                    <li><a href="" class="shopall">Shop All</a></li>
+                    <li><a href="" class="crossbody">Crossbody Bags</a></li>
+                    <li><a href="" class="shoulder">Shoulder Bags</a></li>
+                    <li><a href="" class="tote">Tote Bags</a></li>
+                  </ul>
+                  <ul class="shop1">
+                    <li>CLOTHING</li>
+                    <li><a href="#">New In</a></li>
+                  </ul>
+                  <ul class="shop1">
+                    <li>ACCESSORIES</li>
+                    <li><a href="#">Wallets</a></li>
+                  </ul>
+                </div> -->
+              </div>
+              <div class="navlink">
+                <a href="#" class="">About</a>
+              </div>
+              <div class="navlink">
+                <a href="#" class="">Sustainability</a>
+              </div>
+              <div class="navlink">
+                <a href="#" class="">Silfen Play</a>
+              </div>
+            </div>
+            <div class="nav-menu contentmainnav">
+              <div class="nav-brand">
+                <img
+                  class="logosilfen"
+                  src="assets/SILFEN - LOGO (LILLE)1 (002).png"
+                />
+              </div>
+            </div>
+            <div class="iconsnav flexrow contentmainnav">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="currentColor"
+                class="bi bi-person"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-search"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-heart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 2.748l-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"
+                />
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="currentColor"
+                class="bi bi-bag"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                />
+              </svg>
+            </div>
+            <div class="drop hide" id="dropid">
+              <ul class="shop1">
+                <li>BAGS</li>
+                <li><a href="" class="shopall">Shop All</a></li>
+                <li><a href="" class="crossbody">Crossbody Bags</a></li>
+                <li><a href="" class="shoulder">Shoulder Bags</a></li>
+                <li><a href="" class="tote">Tote Bags</a></li>
+              </ul>
+              <ul class="shop1">
+                <li>CLOTHING</li>
+                <li><a href="#">New In</a></li>
+              </ul>
+              <ul class="shop1">
+                <li>ACCESSORIES</li>
+                <li><a href="#">Wallets</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
-    <div class="hero">
-      <div class="herotext">
-        <p>Welcome to Grandma's house</p>
-        <h1>New Collection<br>
-          <span class="italic">Online now</span>
-        </h1>
+    <main>
+      <div class="hero">
+        <div class="herotext">
+          <p>Welcome to Grandma's house</p>
+          <h1>
+            New Collection<br />
+            <span class="italic">Online now</span>
+          </h1>
+        </div>
+        <a class="pbutton btn" href="html/productlist.html">Shop now</a>
       </div>
-      <div class="button">
-        <a href="#" class="btn">
-          <p class="pbutton">Shop now</p>
-        </a>
+      <div class="wrapper">
+        <div class="HPfilters">
+          <a href="#">Featured</a>
+          <a href="#">New Arrivals</a>
+          <a href="#">Bestsellers</a>
+        </div>
+        <section class="HPproducts">
+          <template id="template">
+            <article id="HPcart">
+              <a href="#"
+                ><img
+                  class="hoverImg"
+                  src="./images/516952_WATERGREEN_FRONT.JPG"
+                  alt=""
+              /></a>
+              <a href="#" class="b bagname">Bumbag Kim</a>
+              <p class="price">DKK 399,00</p>
+              <div class="colorcircles">
+                <div class="circleblue"></div>
+              </div>
+              <a href="#" class="addtocart center hide">
+                <p>Add to cart</p>
+              </a>
+            </article>
+          </template>
+        </section>
+        <section class="fav">
+          <div class="favText center">
+            <h4>You can never go wrong with a classic</h4>
+            <h4>Your favorite SILFEN bags in high-quality calf leather ❤️</h4>
+            <h4>
+              All SILFEN leather is a bi-product of the meat industry. That
+              means that a SILFEN bag is a better choice
+            </h4>
+            <a href="/html/productlist.html" class="btn">
+              <p class="bbutton">Find your fav'</p>
+            </a>
+          </div>
+          <img class="favimg" src="./images/fav.jpeg" alt="" />
+        </section>
+        <section class="sust">
+          <img class="sustimg" src="./images/sust.jpeg" alt="" />
+          <div class="sustainText center">
+            <h4>
+              At SILFEN, we want to make a difference. We offer gorgeous bags
+              made from recycled materials, which helps both you and us be
+              better, while not comprising. We think that’s pretty cool.
+            </h4>
+            <a href="/html/sustainability.html" class="btn">
+              <p class="bbutton">Sustainability</p>
+            </a>
+          </div>
+        </section>
+        <section class="zeroImpact">
+          <div>
+            <h1>
+              The Path<br />
+              To Zero Impact
+            </h1>
+            <p class="grey">
+              Since day one, we have launched various initiatives to keep our
+              carbon footprint to a minimum as well as making conscious
+              decisions concerning the social impact on the communities in the
+              countries, in which we operate. Explore our sustainable selection
+              of bags made from recycled nylon, vegan leather, eco-friendly or
+              organic cotton here.
+            </p>
+            <a class="link" href="/html/sustainability.html">Learn more</a>
+          </div>
+          <div class="zeroProducts">
+            <article class="zeroCart HPcart">
+              <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="" />
+              <p class="b bagname">Bumbag Kim</p>
+              <p class="price">DKK 399,00</p>
+              <div class="colorcircles">
+                <div class="circleblue"></div>
+              </div>
+            </article>
+            <article class="zeroCart HPcart">
+              <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="" />
+              <p class="b bagname">Bumbag Kim</p>
+              <p class="price">DKK 399,00</p>
+              <div class="colorcircles">
+                <div class="circleblue"></div>
+              </div>
+            </article>
+            <article class="zeroCart HPcart">
+              <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="" />
+              <p class="b bagname">Bumbag Kim</p>
+              <p class="price">DKK 399,00</p>
+              <div class="colorcircles">
+                <div class="circleblue"></div>
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="HPShop">
+          <article class="newArrivals">
+            <div class="imglink">
+              <a href="/html/productlist.html"
+                ><img class="hoverresize" src="./images/arrivals.png" alt=""
+              /></a>
+            </div>
+            <h2 class="center">Shop New Arrivals</h2>
+            <p class="grey">Browse through our new collection</p>
+          </article>
+          <article class="Classics">
+            <div class="imglink">
+              <a href="/html/productlist.html"
+                ><img class="hoverresize" src="./images/classics.png" alt=""
+              /></a>
+            </div>
+            <h2 class="center">Shop Classics</h2>
+            <p class="grey">Find your new BFF right here</p>
+          </article>
+          <article class="Crossbody">
+            <div class="imglink">
+              <a href="/html/productlist.html"
+                ><img class="hoverresize" src="./images/crossbody.png" alt=""
+              /></a>
+            </div>
+            <h2 class="center">Shop Crossbody bags</h2>
+            <p class="grey">The perfect companion for everyday-life</p>
+          </article>
+        </section>
+        <section class="HPSoMe">
+          <h1>#SilfenVibes</h1>
+          <h3 class="center">
+            Share your pictures with us using the hashtag #SilfenVibes.<br />
+            We've been waiting for you!​
+          </h3>
+          <div class="SoMeImg">
+            <a class="link" href="https://www.instagram.com/silfenstudio/"
+              ><img class="square" src="./images/1.png" alt=""
+            /></a>
+            <a class="link" href="https://www.instagram.com/silfenstudio/"
+              ><img class="square" src="./images/2.png" alt=""
+            /></a>
+            <a class="link" href="https://www.instagram.com/silfenstudio/"
+              ><img class="square" src="./images/3.png" alt=""
+            /></a>
+            <a class="link" href="https://www.instagram.com/silfenstudio/"
+              ><img class="square" src="./images/4.png" alt=""
+            /></a>
+            <a class="link" href="https://www.instagram.com/silfenstudio/"
+              ><img class="square" src="./images/5.png" alt=""
+            /></a>
+          </div>
+          <a class="link" href="https://www.instagram.com/silfenstudio/"
+            >Follow @SilfenStudio</a
+          >
+        </section>
       </div>
-    </div>
-    <main class="HP">
-      <div class="HPfilters">
-        <p>Featured</p>
-        <p>New Arrivals</p>
-        <p>Bestsellers</p>
-      </div>
-      <section class="HPproducts">
-        <template id="template">
-        <article id="HPcart">
-          <a href="#"><img class="hoverImg" src="./images/516952_WATERGREEN_FRONT.JPG" alt=""></a>
-          <a href="#" class="b bagname">Bumbag Kim</a>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
-            </div>
-          </div>
-          <a href="#" class="addtocart center hide">
-            <p>Add to cart</p>
-          </a>
-        </article>
-      </template>
-        <!-- <article class="HPcart">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <p class="b bagname">Bumbag Kim</p>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
-            </div>
-          </div>
-          <a href="#" class="addtocart center hide">
-            <p>Add to cart</p>
-          </a>
-        </article>
-        <article class="HPcart">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <p class="b bagname">Bumbag Kim</p>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
-            </div>
-          </div>
-          <a href="#" class="addtocart center hide">
-            <p>Add to cart</p>
-          </a>
-        </article>
-        <article class="HPcart">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <p class="b bagname">Bumbag Kim</p>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
-            </div>
-          </div>
-        </article>
-        <article class="HPcart">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <p class="b bagname">Bumbag Kim</p>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
-            </div>
-          </div>
-        </article>
-        <article class="HPcart">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <p class="b bagname">Bumbag Kim</p>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
-            </div>
-          </div>
-        </article>
-        <article class="HPcart">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <p class="b bagname">Bumbag Kim</p>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
-            </div>
-          </div>
-        </article>
-        <article class="HPcart">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <p class="b bagname">Bumbag Kim</p>
-          <p class="price">DKK 399,00</p>
-          <div class="colorcircles">
-            <div class="circleblue">
-            </div>
-          </div>
-        </article> -->
-      </section>
-      <section class="fav">
-        <div class="favText center">
-          <h4>You can never go wrong with a classic</h4>
-          <h4>Your favorite SILFEN bags in high-quality calf leather ❤️</h4>
-          <h4>All SILFEN leather is a bi-product of the meat industry. That means that a SILFEN bag is a better choice
-          </h4>
-          <a href="#" class="btn">
-            <p class="bbutton">Find your fav'</p>
-          </a>
-        </div>
-        <img class="favimg" src="./images/fav.jpeg" alt="">
-      </section>
-      <section class="sust">
-        <img class="sustimg" src="./images/sust.jpeg" alt="">
-        <div class="sustainText center">
-          <h4>
-            At SILFEN, we want to make a difference. We offer gorgeous bags made from recycled materials, which helps both
-            you and us be better, while not comprising. We think that’s pretty cool.</h4>
-          <a href="#" class="btn">
-            <p class="bbutton">Sustainability</p>
-          </a>
-        </div>
-      </section>
-      <section class="zeroImpact">
-        <div>
-          <h1>The Path<br> To Zero Impact</h1>
-          <p class="grey">Since day one, we have launched various initiatives to keep our carbon footprint to a minimum as
-            well as making conscious decisions concerning the social impact on the communities in the countries, in which
-            we
-            operate. Explore our sustainable selection of bags made from recycled nylon, vegan leather, eco-friendly or
-            organic cotton here.</p>
-          <a class="link" href="#">Learn more</a>
-        </div>
-        <div class="zeroProducts">
-          <article class="zeroCart HPcart">
-            <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-            <p class="b bagname">Bumbag Kim</p>
-            <p class="price">DKK 399,00</p>
-            <div class="colorcircles">
-              <div class="circleblue">
-              </div>
-            </div>
-          </article>
-          <article class="zeroCart HPcart">
-            <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-            <p class="b bagname">Bumbag Kim</p>
-            <p class="price">DKK 399,00</p>
-            <div class="colorcircles">
-              <div class="circleblue">
-              </div>
-            </div>
-          </article>
-          <article class="zeroCart HPcart">
-            <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-            <p class="b bagname">Bumbag Kim</p>
-            <p class="price">DKK 399,00</p>
-            <div class="colorcircles">
-              <div class="circleblue">
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-      <section class="HPShop">
-        <article class="newArrivals">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <h2 class="center">Shop New Arrivals</h2>
-          <p class="grey">Browse through our new collection</p>
-        </article>
-        <article class="Classics">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <h2 class="center">Shop Classics</h2>
-          <p class="grey">Find your new BFF right here</p>
-        </article>
-        <article class="Crossbody">
-          <img src="./images/516952_WATERGREEN_FRONT.JPG" alt="">
-          <h2 class="center">Shop Crossbody bags</h2>
-          <p class="grey">The perfect companion for everyday-life</p>
-        </article>
-      </section>
-      <section class="HPSoMe">
-        <h1>#SilfenVibes</h1>
-        <h3 class="center">Share your pictures with us using the hashtag #SilfenVibes.<br>
-          We've been waiting for you!​</h3>
-        <div class="SoMeImg">
-          <img class="square" src="./images/1.png" alt="">
-          <img class="square" src="./images/2.png" alt="">
-          <img class="square" src="./images/3.png" alt="">
-          <img class="square" src="./images/4.png" alt="">
-          <img class="square" src="./images/5.png" alt="">
-        </div>
-        <a class="link" href="#">Follow @SilfenStudio</a>
-      </section>
-      </section>
     </main>
     <!-- FOOTER -->
     <footer>
@@ -308,8 +494,7 @@
         <div>
           <p><b>COME JOIN US, SUBSCRIBE HERE!</b></p>
           <p>
-            We've been waiting for you! Be the first to know about new
-            arrivals,
+            We've been waiting for you! Be the first to know about new arrivals,
             promotional offers and much more.
           </p>
           <form class="form">
@@ -324,7 +509,10 @@
             1115 Copenhagen K<br />
             Denmark
           </p>
-          <p>Phone: +45 20518923<br> VAT: DK40912320</p>
+          <p>
+            Phone: +45 20518923<br />
+            VAT: DK40912320
+          </p>
         </div>
         <div>
           <p><b>SILFEN WAREHOUSE</b></p>
@@ -351,7 +539,7 @@
           <p>© 2021. SILFEN STUDIO. ALL RIGHTS RESERVED</p>
           <div class="linksfooter">
             <a>Terms & Conditions</a>
-           <a>Privacy &Cookie Policy</a>
+            <a>Privacy &Cookie Policy</a>
           </div>
         </div>
         <div>
