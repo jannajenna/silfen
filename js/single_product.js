@@ -1,6 +1,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const query = urlParams.get("id");
-const url = `https://abarela.dk/silfen/silfen_wordpress/wp-json/wp/v2/product?{"id" : {"$in" : ["${query}"]}}`;
+const url = `https://abarela.dk/silfen/silfen_wordpress/wp-json/wp/v2/product?include=${query}`;
 // const url = `https://hubemmd-34fa.restdb.io/rest/bed-fashion;
 
 fetch(url)
@@ -27,6 +27,8 @@ function showProduct(product) {
     "DKK " + product.price + ",00";
 
   document.querySelector(".PPproduct img").src = product.image.guid;
+  document.querySelector(".PPdescription").textContent =
+    product.productdescription;
 
   // console.log("yes");
 
