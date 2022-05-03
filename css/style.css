@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  position: relative;
+  /* position: relative; */
   background-image: url(../images/DSC_0613-1-2.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -60,7 +60,7 @@ h1.PLherotext {
   background-color: var(--c-white);
   margin-bottom: 2rem;
   cursor: pointer;
-  z-index: 5;
+  z-index: 3;
 }
 .btn {
   font-weight: 400;

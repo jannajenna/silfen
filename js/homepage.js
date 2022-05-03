@@ -55,14 +55,16 @@ function showProduct(product) {
 //   element.classList.add("hide");
 // }
 
-window.addEventListener("load", burguermenuo);
+window.addEventListener("load", burguermenuo, hovermenu);
 /* Menu hover */
 
-/* function hovermenu() {
-  document.getElementById("txtdrop").addEventListener("mouseover", function () {
-    document.getElementById("dropid").classList.remove("hide");
-  });
-} */
+function hovermenu() {
+  document
+    .getElementById("txtdrop")
+    .addEventListener("mouseenter", function () {
+      document.getElementById("dropid").classList.remove("hide");
+    });
+}
 
 /* Burguer menu */
 

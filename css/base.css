@@ -181,12 +181,13 @@ nav .navitems .navlink:hover {
   position: absolute;
   flex-direction: row;
   background-color: var(--c-white);
-  display: none;
+  /* display: none; */
 }
 
-.droptext:hover .drop {
+/* .droptext:hover, */
+.drop {
   font-size: 14px;
-  position: absolute;
+  position: relative;
   margin-top: 26px;
   /*  padding: 10px 32px 50px 32px; */
   width: 100%;
@@ -216,6 +217,10 @@ nav .navitems .navlink:hover {
 
 .burguermenu,
 .textburguer {
+  display: none;
+}
+
+.hide {
   display: none;
 }
 
