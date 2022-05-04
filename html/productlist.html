@@ -238,7 +238,9 @@
                 <a href="#" class="">About</a>
               </div>
               <div class="navlink">
-                <a href="../html/sustainability.html" class="">Sustainability</a>
+                <a href="../html/sustainability.html" class=""
+                  >Sustainability</a
+                >
               </div>
               <div class="navlink">
                 <a href="#" class="">Silfen Play</a>
@@ -330,23 +332,27 @@
       </div>
       <div class="wrapper">
         <section class="PLproducts">
-          <article class="PLcart">
-            <a href="#"
-              ><img
-                class="hoverImg"
-                src="/images/516952_WATERGREEN_FRONT.JPG"
-                alt=""
-            /></a>
-            <a href="#" class="b bagname">Bumbag Kim</a>
-            <p class="price">DKK 399,00</p>
-            <div class="colorcircles">
-              <div class="circleblue"></div>
-            </div>
-            <a href="#" class="addtocart center hide">
-              <p>Add to cart</p>
-            </a>
-          </article>
-          <article class="PLcart">
+          <!--  -->
+          <template id="template">
+            <article id="PLcart">
+              <a href="#"
+                ><img
+                  class="hoverImg"
+                  src="/images/516952_WATERGREEN_FRONT.JPG"
+                  alt=""
+              /></a>
+              <a href="#" class="b bagname">Bumbag Kim</a>
+              <p class="price">DKK 399,00</p>
+              <div class="colorcircles">
+                <div class="circleblue"></div>
+              </div>
+              <a href="#" class="addtocart center hide">
+                <p>Add to cart</p>
+              </a>
+            </article>
+          </template>
+          <!--  -->
+          <!-- <article id="PLcart">
             <img
               class="fimage"
               src="/images/516952_WATERGREEN_FRONT.JPG"
@@ -411,7 +417,7 @@
             <div class="colorcircles">
               <div class="circleblue"></div>
             </div>
-          </article>
+          </article> -->
         </section>
         <section class="PLpagination">
           <ul class="pagination">

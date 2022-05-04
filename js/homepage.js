@@ -26,6 +26,9 @@ function showProduct(product) {
   // change content
 
   copy.querySelector(".bagname").textContent = product.productname;
+  copy
+    .querySelector(".bagname")
+    .setAttribute("href", `html/product_view.html?id=${product.id}`);
   copy.querySelector(".price").textContent = "DKK " + product.price + ",00";
 
   copy.querySelector(".hoverImg").src = product.image.guid;

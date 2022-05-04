@@ -26,6 +26,9 @@ function showProduct(product) {
   // change content
 
   copy.querySelector(".bagname").textContent = product.productname;
+  copy
+    .querySelector(".bagname")
+    .setAttribute("href", `product_view.html?id=${product.id}`);
   copy.querySelector(".price").textContent = "DKK " + product.price + ",00";
 
   copy.querySelector(".hoverImg").src = product.image.guid;
@@ -34,7 +37,7 @@ function showProduct(product) {
 
   copy
     .querySelector("a")
-    .setAttribute("href", `html/product_view.html?category=accessories`);
+    .setAttribute("href", `product_view.html?id=${product.id}`);
   // document
   //   .querySelector(".a2")
   //   .setAttribute("href", `productlist.html?category=frames_and_mattresses`);
@@ -46,65 +49,80 @@ function showProduct(product) {
   //   .setAttribute("href", `productlist.html?category=accessories`);
 
   // grab parent
-  const parent = document.querySelector(".HPproducts");
+  const parent = document.querySelector(".PLproducts");
   // append
   parent.appendChild(copy);
 }
 
-let atc = document.querySelector(".hoverImg");
-let element = document.querySelector(".addtocart");
-atc.addEventListener("mouseenter", function () {
-  showaddtocart();
+// let atc = document.querySelector(".hoverImg");
+// let element = document.querySelector(".addtocart");
+// atc.addEventListener("mouseenter", function () {
+//   showaddtocart();
+// });
+// atc.addEventListener("mouseleave", function () {
+//   hideaddtocart();
+// });
+// function showaddtocart() {
+//   element.classList.remove("hide");
+// }
+// function hideaddtocart() {
+//   element.classList.add("hide");
+// let atc = document.querySelector(".hoverImg");
+// let element = document.querySelector(".addtocart");
+// atc.addEventListener("mouseenter", function () {
+//   showaddtocart();
+// });
+// atc.addEventListener("mouseleave", function () {
+//   hideaddtocart();
+// });
+// function showaddtocart() {
+//   element.classList.remove("hide");
+// }
+// function hideaddtocart() {
+//   element.classList.add("hide");
+// }
+
+window.addEventListener("load", burguermenuo);
+/* Menu hover */
+let menu = document.querySelector("#txtdrop");
+let drop = document.querySelector(".drop");
+menu.addEventListener("mouseenter", function () {
+  showdrop();
 });
-atc.addEventListener("mouseleave", function () {
-  hideaddtocart();
+menu.addEventListener("mouseleave", function () {
+  setTimeout(function () {
+    hidedrop();
+  }, 2000);
 });
-function showaddtocart() {
-  element.classList.remove("hide");
+function showdrop() {
+  drop.classList.remove("hide");
 }
-function hideaddtocart() {
-  element.classList.add("hide");
-  // let atc = document.querySelector(".hoverImg");
-  // let element = document.querySelector(".addtocart");
-  // atc.addEventListener("mouseenter", function () {
-  //   showaddtocart();
-  // });
-  // atc.addEventListener("mouseleave", function () {
-  //   hideaddtocart();
-  // });
-  // function showaddtocart() {
-  //   element.classList.remove("hide");
-  // }
-  // function hideaddtocart() {
-  //   element.classList.add("hide");
-  // }
+function hidedrop() {
+  drop.classList.add("hide");
+}
 
-  window.addEventListener("load", burguermenuo);
-  /* Menu hover */
-
-  /* function hovermenu() {
+/* function hovermenu() {
   document.getElementById("txtdrop").addEventListener("mouseover", function () {
     document.getElementById("dropid").classList.remove("hide");
   });
 } */
 
-  /* Burguer menu */
+/* Burguer menu */
 
-  function burguermenuo() {
-    document.getElementById("openb").addEventListener("click", function () {
-      document.getElementById("openb").classList.add("hide");
-      document.getElementById("closeb").classList.remove("hide");
-      document.getElementById("closeb").addEventListener("click", burguermenux);
-      document.getElementById("tbcontent").classList.remove("hide");
-    });
-  }
+function burguermenuo() {
+  document.getElementById("openb").addEventListener("click", function () {
+    document.getElementById("openb").classList.add("hide");
+    document.getElementById("closeb").classList.remove("hide");
+    document.getElementById("closeb").addEventListener("click", burguermenux);
+    document.getElementById("tbcontent").classList.remove("hide");
+  });
+}
 
-  function burguermenux() {
-    document.getElementById("closeb").addEventListener("click", function () {
-      document.getElementById("closeb").classList.add("hide");
-      document.getElementById("openb").classList.remove("hide");
-      document.getElementById("openb").addEventListener("click", burguermenuo);
-      document.getElementById("tbcontent").classList.add("hide");
-    });
-  }
+function burguermenux() {
+  document.getElementById("closeb").addEventListener("click", function () {
+    document.getElementById("closeb").classList.add("hide");
+    document.getElementById("openb").classList.remove("hide");
+    document.getElementById("openb").addEventListener("click", burguermenuo);
+    document.getElementById("tbcontent").classList.add("hide");
+  });
 }
